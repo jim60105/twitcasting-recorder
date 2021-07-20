@@ -21,8 +21,8 @@ def record_twitcasting(user, proxy='', user_agent='', filename=''):
             def on_message(ws, data):
                 try:
                     output_fd.write(data)
-                    sys.stderr.write('.')
-                    sys.stderr.flush()
+                    # sys.stderr.write('.')
+                    # sys.stderr.flush()
                 except IOError as err:
                     print(f'Error when writing to output: {err}, exiting')
                     ws.close()
