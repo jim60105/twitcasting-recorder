@@ -13,7 +13,8 @@ def record_twitcasting(user, proxy='', user_agent='', filename=''):
 
         try:
             # Default filename
-            filename = filename if filename else datetime.now().strftime('record_' + user + '_%Y%m%d_%H%M%S.ts')
+            data = _get_stream_info(user, proxy, user_agent)
+            filename = filename if filename else (str(data["movie"]["id"]) + ".ts")
 
             output_fd = open(filename, 'wb')
             print(f'Writing stream to {filename}')
