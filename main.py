@@ -73,6 +73,9 @@ def record_twitcasting(user, proxy="", user_agent="", filename=""):
                 ]
             )
 
+            # Remove ts file
+            os.remove(filename + ".ts")
+
         except Exception as err:
             print("Failed to connect to WebSocket server", err)
         finally:
