@@ -4,7 +4,8 @@ Just another Python implementation of [TwitCasting](https://twitcasting.tv/) liv
 
 ## Usage
 
-Install dependencies with `pip install -r requirements.txt`.
+Install dependencies with `pip install -r requirements.txt`.\
+**Install ffmpeg manually if you haven't.**
 
 ```
 usage: main.py [-h] [--proxy PROXY] [--user-agent USER_AGENT] [-o FILENAME] user_id
