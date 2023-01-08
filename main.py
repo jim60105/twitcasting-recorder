@@ -17,7 +17,10 @@ def record_twitcasting(user, proxy="", user_agent="", filename=""):
         try:
             # Default filename
             data = _get_stream_info(user, proxy, user_agent)
-            filename = filename if filename else (str(data["movie"]["id"]) + ".ts")
+            filename = (filename if filename else str(data["movie"]["id"])) + ".ts"
+            if not os.path.isdir("download"):
+                os.makedirs("download")
+            filename = os.path.join(os.getcwd(), "download", filename)
 
             output_fd = open(filename, "wb")
             print(f"Writing stream to {filename}")
