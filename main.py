@@ -108,7 +108,7 @@ def get_stream_url(user, proxy='', user_agent=''):
 
 
 def prepare_websocket(url, **kwargs):
-    websocket.enableTrace(True)
+    websocket.enableTrace(False)
     ws = websocket.WebSocketApp(url, **kwargs)
     return ws
 
