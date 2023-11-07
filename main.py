@@ -171,7 +171,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--user-agent",
         help="Request with custom User Agent.",
-        default="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0",
+        default="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     )
     parser.add_argument(
         "-o", "--output", dest="filename", help="File name to save recorded video."
