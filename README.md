@@ -1,4 +1,4 @@
-# TwitCasting Recorder [WIP]
+# TwitCasting Recorder
 
 Just another Python implementation of [TwitCasting](https://twitcasting.tv/) live stream recorder.
 
@@ -23,14 +23,6 @@ optional arguments:
                         Request with custom User Agent.
   -o FILENAME, --output FILENAME
                         File name to save recorded video.
-```
-
-Recorded videos are saved as MPEG-2 TS format, which is designed for live streaming.
-
-You can simply remux them to MP4 format using ffmpeg:
-
-```
-ffmpeg -i xxx.ts -codec copy xxx.mp4
 ```
 
 ## Thanks
