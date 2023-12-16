@@ -25,6 +25,10 @@ optional arguments:
                         File name to save recorded video.
 ```
 
+## Docker
+
+Check [jim60105/docker-twitcasting-recorder](https://github.com/jim60105/docker-twitcasting-recorder) repository for docker usage.
+
 ## Thanks
 
 - [himananiito/livedl](https://github.com/himananiito/livedl)
