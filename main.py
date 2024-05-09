@@ -33,8 +33,8 @@ def record_twitcasting(user, proxy="", user_agent="", filename=""):
             def on_error(ws, error):
                 print(error)
 
-            def on_close(ws):
-                print("Disconnected from WebSocket server")
+            def on_close(ws, close_status_code, close_msg):
+                print(f"Disconnected from WebSocket server ({close_status_code}): {close_msg}")
 
             ws = prepare_websocket(
                 stream_url,
