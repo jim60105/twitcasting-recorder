@@ -59,6 +59,7 @@ def record_twitcasting(user, proxy="", user_agent="", filename=""):
             subprocess.run(
                 [
                     "ffmpeg",
+                    "-y", # Overwrite existing file
                     "-i",
                     filename + ".ts",
                     "-c",
